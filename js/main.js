@@ -150,6 +150,7 @@ function shopingChart () {
   }
 
   var removeBoughtItem = function (e) {
+    e.preventDefault();
    
     var boughtAttr = $(this).parent().attr('id');
     $(this).parent().remove();
@@ -159,7 +160,7 @@ function shopingChart () {
     storage.remove(boughtAttr);
     storageCounter();
     //storageRead(); 
-    e.preventDefault();
+  
   }
 
   //Remove link button
