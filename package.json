@@ -1,0 +1,47 @@
+{
+  "name": "eton-drupal-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "file-saver": "^1.3.8",
+    "inuitcss": "^6.0.0",
+    "jquery": "^3.3.1",
+    "source-map": "^0.5.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "css-mqpacker": "^4.0.1",
+    "del": "^2.2.2",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.12.0",
+    "gulp-stylelint": "^5.0.0",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify-es": "^0.1.6",
+    "stylelint-config-standard": "^18.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "find node_modules/ -name \"*.info\" -type f -delete"
+  },
+  "author": "",
+  "license": "ISC"
+}

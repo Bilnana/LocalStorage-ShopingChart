@@ -1,0 +1,86 @@
+/* ==========================================================================
+   #LIST MENU
+   ========================================================================== */
+.tab-menu {
+  max-width: 450px;
+  width: 100%;
+  background-color: $red-primary;
+
+  .tab-menu__item {
+    padding: 30px 0;
+    background-color: $red-primary;
+    border-bottom: 1px solid #d5dbdc;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:last-child {
+      margin-bottom: none;
+    }
+
+    a {
+      width: 100%;
+      color: $white;
+      text-decoration: none;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding-left: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &.clicked {
+      width: calc(100% + 20px);
+      transform: translateX(-20px);
+      background-color: darken($red-primary, 10%);
+
+      a {
+        color: darken($white, 15%);
+      }
+    }
+
+    &:hover {
+
+      a {
+        color: darken($white, 15%);
+      }
+    }
+  }
+}
+
+.footer__menu {
+
+  li {
+    margin-bottom: 20px;
+
+    a {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+}
+
+.nav-menu {
+  padding: 50px;
+  width: 300px;
+  transform: translateX(-100%);
+  height: calc(100% - 76px);
+  position: absolute;
+  top: 76px;
+  border-right: 2px solid $grey-border;
+  transition: all 0.4s ease-in;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .nav-menu__item {
+    margin-bottom: 30px;
+
+    a {
+      color: $font-color;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}

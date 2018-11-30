@@ -1,0 +1,70 @@
+//media queries
+@mixin mq($media) {
+
+  // ========= FROM =========
+  @if $media == from1200 {
+    @media only screen and (min-width: 1200px) { @content; }
+  }
+
+  @elseif $media == from992 {
+    @media only screen and (min-width: 992px) { @content; }
+  }
+
+  @elseif $media == from768 {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+
+  // ========= TO =========
+  @elseif $media == to1380 {
+    @media only screen and (max-width: 1379px) { @content; }
+  }
+
+  @elseif $media == to1200 {
+    @media only screen and (max-width: 1199px) { @content; }
+  }
+
+  @elseif $media == to992 {
+    @media only screen and (max-width: 991px) { @content; }
+  }
+
+  @elseif $media == to768 {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+
+  @elseif $media == to550 {
+    @media only screen and (max-width: 549px) { @content; }
+  }
+
+  @elseif $media == to480 {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+
+  @elseif $media == to380 {
+    @media only screen and (max-width: 379px) { @content; }
+  }
+
+  // ========= FROM TO =========
+  @elseif $media == from992to1200 {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) { @content; }
+  }
+
+  @elseif $media == from768to992 {
+    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+
+  @elseif $media == from768to1200 {
+    @media only screen and (min-width: 768px) and (max-width: 1199px) { @content; }
+  }
+
+  @elseif $media == from550to992 {
+    @media only screen and (min-width: 550px) and (max-width: 991px) { @content; }
+  }
+
+  @elseif $media == from480to992 {
+    @media only screen and (min-width: 480px) and (max-width: 991px) { @content; }
+  }
+
+  @elseif $media == from380to992 {
+    @media only screen and (min-width: 380px) and (max-width: 991px) { @content; }
+  }
+}

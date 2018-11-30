@@ -1,0 +1,48 @@
+.swiper-container {
+  padding: 50px 0;
+}
+
+.t-slider__item {
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+
+  .t-slider__desc {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: $white;
+    height: 60px;
+    opacity: 0.8;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+
+    h5 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      opacity: 0.2;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  &:hover {
+    .t-slider__desc {
+      height: 100%;
+      justify-content: center;
+
+      p {
+        opacity: 1;
+      }
+    }
+  }
+}

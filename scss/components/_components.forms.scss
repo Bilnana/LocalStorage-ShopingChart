@@ -1,0 +1,116 @@
+input[type="text"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.r-form {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include mq(to768) {
+    width: 100%;
+  }
+
+  .r-form__item {
+    width: 48%;
+    margin-bottom: 40px;
+    height: 40px;
+    position: relative;
+
+    @include mq(to768) {
+      width: 100%;
+    }
+
+    .r-form__control {
+      width: 100%;
+      height: 100%;
+      padding: 0 8px;
+
+      &.filed {
+        color: $red-primary;
+
+        + .r-form__placeholder {
+          transform: translateY(calc(-100% - 12px));
+        }
+      }
+    }
+
+    .r-form__placeholder {
+      position: absolute;
+      font-size: 14px;
+      bottom: 12px;
+      left: 8px;
+      transform: translateY(0);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  .reserve-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(to1200) {
+      flex-direction: column;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .text-broken {
+    @include mq(to1200) {
+      margin-top: 15px;
+    }
+  }
+
+  .number {
+    font-size: 24px;
+    color: $font-color;
+    font-weight: 700;
+    border-left: 2px solid $grey-border;
+    padding-left: 60px;
+
+    @include mq(to1200) {
+      border-left: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
+.f-newsleater {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .newsleter__control {
+    width: calc(100% - 145px - 5px); //Width - btn width - margin
+    height: 40px;
+    margin-right: 5px;
+
+    @include mq(to768) {
+      width: 100%;
+    }
+  }
+
+  .btn-subscribe {
+    @include mq(to768) {
+      margin-top: 15px;
+    }
+  }
+}

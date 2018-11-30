@@ -1,0 +1,32 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+.footer {
+  background-color: #975a3f;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  height: 380px;
+  display: flex;
+  align-items: center;
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+    h5 {
+      width: 50%;
+      color: $white;
+    }
+
+    .footer__info {
+      p {
+        color: $white;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

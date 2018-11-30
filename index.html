@@ -1,0 +1,388 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-Exercisse</title>
+  <meta name="Biljana Ljubojevic" content="exercisess">
+  <!-- Fonts Releway -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <!-- CSS file -->
+  <link rel="stylesheet" href="dest/css/swiper.min.css">
+  <link rel="stylesheet" href="dest/css/styles.min.css">
+</head>
+
+<body>
+<!--  Big wrap layout-container -->
+<div class="layout-container">
+  <div class="main-content">
+    <ul class="nav-menu">
+      <li class="nav-menu__item"><a href="">Home</a></li>
+      <li class="nav-menu__item"><a href="">About us</a></li>
+      <li class="nav-menu__item"><a href="">Gallery</a></li>
+      <li class="nav-menu__item"><a href="">Blog</a></li>
+    </ul>
+    <div class="header b-container">
+      <div class="nav">
+          <div class="btn-menu">
+              <div class="btn-menu__icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            <span>MENU</span>
+          </div>
+      </div>
+      <div class="user">
+        <a href="chart.html"></a><span class="icon-shopping-cart"></span></a>
+        <span class="bought-items"></span>
+      </div>
+    </div>
+    <div class="shopingchart s-container">
+      <div class="shoping-wrap">
+        <div class="s-list">
+          <div class="s-list__item" id="1">
+            <div class="item-desc">
+              <h4 class="name">Item 1</h4>
+              <p>Nulla pellentesque urna id massa consequat sagittis. Nullam semper dignissim accumsan. Integer in consectetur elit.</p>
+            </div>
+            <a href="" class="add-link">Add to chart</a>
+            <div class="item-price">
+              <p class="item-price__value">55</p>
+              <p class="item-price__dolar">$</p>
+            </div>
+          </div>
+          <div class="s-list__item" id="2">
+            <div class="item-desc">
+              <h4 class="name">Item 2</h4>
+              <p>Nulla pellentesque urna id massa consequat sagittis. Nullam semper dignissim accumsan. Integer in consectetur elit.</p>
+            </div>
+            <a href="" class="add-link">Add to chart</a>
+            <div class="item-price">
+              <p class="item-price__value">45</p>
+              <p class="item-price__dolar">$</p>
+            </div>
+          </div>
+          <div class="s-list__item" id="3">
+            <div class="item-desc">
+              <h4 class="name">Item 3</h4>
+              <p>Nulla pellentesque urna id massa consequat sagittis. Nullam semper dignissim accumsan. Integer in consectetur elit.</p>
+            </div>
+            <a href="" class="add-link">Add to chart</a>
+            <div class="item-price">
+              <p class="item-price__value">65</p>
+              <p class="item-price__dolar">$</p>
+            </div>
+          </div>
+          <div class="s-list__item" id="4">
+            <div class="item-desc">
+              <h4 class="name">Item 4</h4>
+              <p>Nulla pellentesque urna id massa consequat sagittis. Nullam semper dignissim accumsan. Integer in consectetur elit.</p>
+            </div>
+            <a href="" class="add-link">Add to chart</a>
+            <div class="item-price">
+              <p class="item-price__value">85</p>
+              <p class="item-price__dolar">$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shoping-chart-bag  s-list s-container">
+      <a class="reset btn" href="">Reset chart</a>
+      <div class="total">250<span class="dolar">$</span></div>
+    </div>
+    <div class="tab-wraper s-container">
+      <ul class="tab-menu">
+        <li class="tab-menu__item clicked" data-tab="tab-1"><a href="">Food</a></li>
+        <li class="tab-menu__item" data-tab="tab-2"><a href="">Drinks</a></li>
+        <li class="tab-menu__item" data-tab="tab-3"><a href="">Desserts</a></li>
+      </ul>
+      <div class="c-wrap">
+        <div id="tab-1" class="tab-content clicked">
+          Food
+        </div>
+        <div id="tab-2" class="tab-content">
+          Drinks
+        </div>
+        <div id="tab-3" class="tab-content">
+          Desserts
+        </div>
+      </div>
+    </div>
+    <div class="checkbox-wrap s-container">
+      <div class="checkbox checkbox-red">
+        <input  id="checkbox1" class="checkbox__control" type="checkbox" name="colors">
+        <label for="checkbox1" class="checkbox__label">Red</label>
+      </div>
+      <div class="checkbox checkbox-grey">
+        <input  id="checkbox2" class="checkbox__control" type="checkbox" name="colors">
+        <label for="checkbox2" class="checkbox__label">Blue</label>
+      </div>
+    </div>
+    <div class="wrap s-container">
+      <div class="box">
+        <img src="img/imgage1.jpeg" alt="Mobile">
+        <div class="box__desc">
+          <h4>Something</h4>
+          <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+            Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+            Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+          </p>
+        </div>
+        <button class="btn btn-bordered">View more</button>
+      </div>
+      <div class="rotate">
+        <div class="rotate__inner">
+          <div class="rotate__image">
+            <img src="img/imgage1.jpeg" alt="Mobile">
+          </div>
+          <div class="rotate__desc">
+            <h4>Something</h4>
+            <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+              Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+              Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team s-container">
+       <!-- Swiper -->
+      <div class="t-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+              <img src="img/user.png" alt="Mobile">
+              <div class="t-slider__desc">
+                <h5>Team member</h5>
+                <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                  Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                </p>
+              </div>
+            </div>
+            <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+              <div class="t-slider__item swiper-slide">
+                <img src="img/user.png" alt="Mobile">
+                <div class="t-slider__desc">
+                  <h5>Team member</h5>
+                  <p>Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                    Phasellus tincidunt facilisis interdum. Duis arcu enim, tristique vel fringilla eget, ornare non magna.
+                    Praesent bibendum porta dolor eu convallis. Sed vel rhoncus enim. 
+                  </p>
+                </div>
+              </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer b-container">
+    <div class="footer__inner s-container">
+      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut mi sed lacus aliquam pellentesque. Aenean tristique augue eget dui interdum, at porttitor augue suscipit. Maecenas orci nulla, lacinia quis faucibus id, facilisis nec tellus.
+        Integer id placerat lectus.</h5>
+      <ul class="footer__menu">
+        <li><a href="">About us</a></li>
+        <li><a href="">How it works</a></li>
+        <li><a href="">Invest</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+      <div class="footer__info">
+        <p>nnnn@gmail.com</p>
+        <p>1, Adekunle Owobiyi Close</p>
+        <p>Ogba, Lagos, Nigeria.</p>
+        <p>+234 8188116677</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="dest/js/jquery.min.js"></script>
+<script src="dest/js/swiper.min.js"></script>
+<script src="dest/js/js.storage.min.js"></script>
+<script src="dest/js/scripts.min.js"></script>
+</body>
+</html>

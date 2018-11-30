@@ -1,0 +1,11 @@
+/*  ==========================================================================
+  #WRAPPER
+  ==========================================================================  */
+
+  .header {
+    padding: 20px 0;
+    border-bottom: 2px solid $grey-border;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }

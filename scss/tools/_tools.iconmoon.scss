@@ -1,0 +1,60 @@
+///* ========================================================================
+//   #ICONMOON
+//   ======================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon/icomoon.eot?oc6ddd');
+  src:
+    url('../../fonts/icomoon/icomoon.eot?oc6ddd#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf?oc6ddd') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff?oc6ddd') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg?oc6ddd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before,
+%icomoon::before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-1::before {
+  content: "\e906";
+}
+
+.icon-right-arrow::before {
+  content: "\e904";
+  color: #fffaf1;
+}
+
+.icon-left-arrow::before {
+  content: "\e905";
+  color: #fffaf1;
+}
+
+.icon-chat::before {
+  content: "\e902";
+}
+
+.icon-call::before {
+  content: "\e903";
+}
+
+.icon-shopping-cart::before {
+  content: "\e900";
+}
+
+.icon-plate::before {
+  content: "\e901";
+}
