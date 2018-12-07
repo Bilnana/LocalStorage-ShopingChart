@@ -160,7 +160,19 @@ function shopingChart () {
     storage.remove(boughtAttr);
     storageCounter();
     //storageRead(); 
-  
+
+
+    //Calculating on removing
+    var removedPriceText = $(this).parent().find('.item-price').find('.item-price__value').text();
+
+    var removedPriceNumber = parseInt(removedPriceText);
+    var fullPrice = $('.total').text();
+    var fullPriceNumber = parseInt(fullPrice);
+
+    console.log(removedPriceNumber, fullPriceNumber);
+
+    var newPrice = fullPriceNumber - removedPriceNumber;
+    $('.total').text(newPrice);
   }
 
   //Remove link button
